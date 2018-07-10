@@ -22,7 +22,7 @@ var getfile=(i)=>{
 	type:'GET',
 	dataType:'json',
 	async:true,
-	url:'http://www.omdbapi.com/?apikey=3405677d&'+i,
+	url:'https://www.omdbapi.com/?apikey=3405677d&'+i,
 	success:(response)=>{
 
 		$('#image').html('<img class="card-img-top"  onerror="this.src=\'image/image.jpeg\';" src="' + response.Poster + '" />');
