@@ -1,0 +1,50 @@
+<!-- <form>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Email address</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">Example textarea</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+</form> -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>contact us</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta charset="utf-8">
+</head>
+<body style="background:url(image/contact.jpg) no-repeat fixed center; background-size: cover;width:100vw;height:80vh;">
+  <div class="container">
+    <div class="row" style="margin: 5% auto;">
+<form id="my-form" action="https://formspree.io/manishagrawal1994@gmail.com" method="POST" >
+  <div class="form-row align-items-center">
+    <div class="col-md-12"> 
+      <label for="inlineFormInput" style="color:white">Email-ID</label>
+      <input type="text" class="form-control mb-2" id="inlineFormInpu" placeholder="TypeID" name="email">
+    </div>
+    <br>
+    <div class="col-md-12">
+      <label for="inlineFormInputGroup"  style="color:white">Feedback</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1"  placeholder="Feedback" rows="8" cols="30" name="feedback"></textarea>
+    </div>
+    <div class="col-md-12" style="margin: 5% 5%;">
+      <button type="submit" class="btn btn-primary mb-2" style="margin-right: 10%;">Submit</button>
+      <button type="reset" class="btn btn-primary mb-2" id="reset-form">Reset</button>
+    </div>
+  </div>
+</form>
+</div>
+<div class="row">
+  <div class="col-xl-12">
+<a href="index.html"><button type="button" class="btn btn-primary btn-lg btn-block">Back</button></a>
+</div>
+</div>
+
+</div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+</html>

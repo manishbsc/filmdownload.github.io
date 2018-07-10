@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Filmkhoz</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Sigmar+One" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+</head>
+<body>
+	<!--navbar start-->
+	<nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: white;">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="index.html">FILMKHOZ</a>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          My Work
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="https://manishbsc.github.io/colorgame.github.io/">Color cube</a>
+          <a class="dropdown-item" href="https://manishbsc.github.io/">Portfolio</a>
+          <a class="dropdown-item" href="https://manishbsc.github.io/manishbsc1.github.io">Chat app frontend</a>
+          <a class="dropdown-item" href="https://manishbsc.github.io/jquery1/">Jquery Usage</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://manishbsc.github.io/">About me</a>
+      </li>
+       </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contactus.html">Contact Us</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+  <!--navbar end-->
+	<div class="container">
+    <div id="mainhide">
+		<div class="row">
+			<div class="col">
+				<h2>Welcome to Movie Search Portal!</h2>
+				</div>
+			</div>
+      <div class="col">
+        <h3>Search any movie using id,title or year in seconds.</h3>
+        </div>
+     <!--form start-->   
+        <form id="my-form" method="post" name="my-form">
+  <div class="form-row align-items-center">
+    <div class="col-auto">
+      <label for="inlineFormInput">ID</label>
+      <input type="text" class="form-control mb-2" id="inlineFormInpu" placeholder="TypeID" name="i">
+    </div>
+    <div class="col-auto">
+      <label for="inlineFormInputGroup">TITLE</label>
+        <input type="text" class="form-control mb-2" id="inlineFormInputGroup" placeholder="Type Movie Name" name="t">
+    </div>
+      <div class="col-auto">
+      <label for="inlineFormInput ">Year</label>
+      <input type="text" class="form-control mb-2" id="inlineFormInput" placeholder="Type Movie Year" name="y">
+    </div>
+    <div class="col-md-6">
+      <button type="submit" class="btn btn-primary mb-2">Submit</button>
+      <button type="reset" class="btn btn-primary mb-2" id="reset-form">Reset</button>
+    </div>
+  </div>
+</form>
+<!--form end-->
+</div>
+<!--card begin-->
+<div class="card" id="cardhide">
+  <div id="image">
+  <img class="card-img-top" src="image/image.jpeg" alt="Card image cap">
+</div>
+  <div class="card-body">
+    <h5 class="card-title" style="text-align: center">Movie Name</h5>
+    <p class="card-text"></p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item" id="id1">Year:<span></span></li>
+    <li class="list-group-item" id="id2">Rated:<span></span></li>
+    <li class="list-group-item" id="id3" >Released:<span></span></li>
+    <li class="list-group-item" id="id4" >imdbID:<span></span></li> 
+    <li class="list-group-item" id="id5" >Actors:<span></span></li>
+    <li class="list-group-item" id="id6" >Genre:<span></span></li> 
+    <li class="list-group-item" id="id7" >Director:<span></span></li> 
+     <li class="list-group-item" id="id8" >Plot:<span></span></li> 
+    <li class="list-group-item" id="id9" >IMDB-rating:<span></span></li> 
+    <li class="list-group-item" id="id10" >Awards:<span></span></li> 
+    <li class="list-group-item" id="id11" >Country:<span></span></li>
+     <li class="list-group-item" id="id12" >Runtime:<span></span></li> 
+    <li class="list-group-item" id="id13" >Production:<span></span></li> 
+    <li class="list-group-item" id="id14" >Language:<span></span></li>  
+    
+
+  </ul>
+  <div class="card-body">
+    <a href="index.html" class="card-link"><button type="button" class="btn btn-primary btn-lg btn-block">Close</button></a>
+  </div>
+</div>
+<!--card begin-->
+      </div>
+      <!--container end-->
+      <footer class="footer">
+        <div class="container text-center icon-group">
+            <span class="text-muted">Handcrafted with <i class="fas fa-heart"></i> by <a href="https://manishbsc.github.io/">MANISH</a></span>
+            <div>
+             <a href="https://facebook.com/manishagrawal1994"><img src="image/Facebook-icon.png" class="icon"></a>
+                    <a href="https://twitter.com/manishagrawal94"><img src="image/twitter.png" class="icon"></a>
+                     <a href="https://github.com/manishbsc"><img src="image/git.png" class="icon"></a>
+                    <a href="https://www.linkedin.com/in/manish-kumar-21961a79/"><img src="image/linkedin.png" class="icon"></a></div>
+        </div>
+    </footer>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="js/index.js"></script>
+</html>
