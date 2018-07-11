@@ -34,13 +34,27 @@ var getfile=(i)=>{
 		$('#id5').append(response.Actors);
 		$('#id6').append(response.Genre);
 		$('#id7').append(response.Director);
+		$('#id17').append(response.Writer);
 		$('#id8').append(response.Plot);
 		$('#id9').append(response.imdbRating);
+		$('#id19').append(response.imdbVotes);
+		$('#id20').append(response.Type);
 		$('#id10').append(response.Awards);
 		$('#id11').append(response.Country);
 		$('#id12').append(response.Runtime);
 		$('#id13').append(response.Production);
 		$('#id14').append(response.Language);
+		var c=1;
+		for(x in response.Ratings){
+		$('#id15').append(c+".   "+response.Ratings[x].Source);
+		$('#id15').append("<br>");
+		$('#id16').append(c+".   "+response.Ratings[x].Value);
+		$('#id16').append("<br>");
+		c++;
+	}
+	    $('#id18').append(response.Metascore);
+        $('#id21').append(response.Website);
+        $('#id22').append(response.BoxOffice);
 
 
 		var k=response.Response;
