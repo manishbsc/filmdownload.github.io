@@ -11,9 +11,9 @@ $(document).ready(function()
   	 e.preventDefault();
   	 /* process to get data in form of string*/
   	 var i=$(this).serialize();
+  	 getfile(i);
   	  $("#mainhide").hide();
   	    $("#cardhide").show();
-  	 getfile(i);
   });
 }
 var getfile=(i)=>{
@@ -63,14 +63,28 @@ var getfile=(i)=>{
 	},
 	error:(response)=>{
 		alert("SOME ERROR");
-	}
+	},
+
+    beforeSend:()=>{
+    	$(".container").hide();
+    	$('#wait').addClass("fa fa-spinner fa-4x fa-pulse");
+        
+    },
+
+     complete:()=>{
+    	$('#wait').removeClass("fa fa-spinner fa-5x fa-pulse");
+    	$(".container").show();
+    	
+    }
         });
+
 }
 
 function respo(k){
 	console.log("making requedtest");
 	if (k=="False") {
-		alert("error.kindly close");
+		$("#cardhide").hide();
+		alert("Invalid request!Wait autorefresh on");
 		document.getElementById("my-form").reset();
 		location.reload();
 	}
